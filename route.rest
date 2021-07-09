@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/156
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Abantika",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/60e7ecaa1331ff38ec73dd1f
+
+###
+PATCH http://localhost:3000/subscribers/60e7e635d147b81f84b3bffa
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
